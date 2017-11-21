@@ -56,8 +56,8 @@ export default class GFMDataProcessor {
 	 */
 	toData( viewFragment ) {
 		const html = this._htmlDP.toData( viewFragment );
-
-		return toMarkdown( html, { gfm: true, converters } );
+		// Instead of using data as markdown save it as HTML! ~@vladikoff
+    return html;
 	}
 }
 
